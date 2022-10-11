@@ -1,13 +1,77 @@
 
-body {
-    /* display: flex; */
-}
-
-div {
-    border-color: black ;
-    border: 1px;
-    border-style: solid;
+/* div {
+    border: 2px;
     background-color: white;
+    border-style: solid;
+    border-color: black ;
     padding: 10px;
-
+} */
+.grid-container {
+    border: 2px;
+    background-color: white;
+    border-style: solid;
+    border-color: green ;
+    padding: 10px;
 }
+.grid-container {
+    border: 2px;
+    border-style: solid;
+    border-color:red;
+    padding: 10px;
+    background-color: white;
+}
+/* 
+1. FLEX method will be the first
+*/
+/* 
+1. FLEX END
+*/
+
+/* 
+2. FLOAT/CLEAR will be the second method
+*/
+
+.grid-container {
+    border: 2px;
+    border-style: solid;
+    border-color:black;
+    padding: 5px;
+    background-color: white;
+    width: 960px;
+    max-width: 960px;
+    /* width: fit-content; */
+    display: table;
+}
+
+.grid-square {
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 20px;
+    background-color: grey;
+
+    
+    /* display: table; */
+    float: left;
+}
+.grid-square-start {
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 20px;
+    background-color: grey;
+
+    float: left;
+    clear: left;
+}
+/* 
+2. FLOAT/CLEAR END
+*/
+
+/* 
+3. INLINE-BLOCK is the third
+*/
+
+/* 
+4. CSS GRID  method will be the final one
+*/

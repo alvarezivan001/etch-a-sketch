@@ -1,14 +1,56 @@
+// let gridCount = 16;
 
-let gridCount = 4;
-let gridRight = 16;
-let gridDown = 16;
+// let divContainer = document.querySelector('.grid-container');
 
-let divContainer = document.querySelector('.container');
+// //create divs based on the grid count
+// for(let i = 0; i < gridCount; i++)
+// {
+//     const div = document.createElement('div');
+//     // div.textContent = "Hello";
+//     divContainer.appendChild(div);
+// }
 
-//create divs based on the grid count
-for(let i = 0; i < (gridCount*gridCount); i++)
+// 
+// FLOAT/CLEAR start
+// 
+
+//setup gridcount, grab container
+let gridCount = 20;//4*4 = 16
+let divGridContainer = document.querySelector('.grid-container');
+
+for(let i = 1; i <= gridCount; i++)
 {
-    const div = document.createElement('div');
-    // div.textContent = "Hello";
-    divContainer.appendChild(div);
+    const startDiv = document.createElement('div');
+    startDiv.classList.toggle('grid-square-start');
+    divGridContainer.appendChild(startDiv);
+    for(let i = 2; i <= gridCount; i++)
+    {
+        const div = document.createElement('div');
+        div.classList.toggle('grid-square');
+        divGridContainer.appendChild(div);
+    }
 }
+// 
+// FLOAT/CLEAR end
+// 
+
+// 
+// FLEX
+// 
+
+// 
+// 
+
+// 
+// INLINE/BLOCK
+// 
+
+// 
+// 
+
+// 
+// CSS GRID
+// 
+
+// 
+// 
