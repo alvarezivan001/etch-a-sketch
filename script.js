@@ -15,7 +15,7 @@
 // 
 
 //setup gridcount, grab container
-let gridCount = 4;//4*4 = 16
+let gridCount = 16;//4*4 = 16
 let divGridContainer = document.querySelector('.grid-container');
 
 for(let i = 1; i <= gridCount; i++)
@@ -31,6 +31,18 @@ for(let i = 1; i <= gridCount; i++)
         divGridContainer.appendChild(div);
     }
 }
+
+const gridSquares = document.querySelectorAll('.grid-square');
+
+gridSquares.forEach((square) => {
+
+    square.addEventListener('mouseover', () => {
+
+        square.classList.toggle('hovered');
+        
+    });
+
+});
 // 
 // FLOAT/CLEAR end
 // 

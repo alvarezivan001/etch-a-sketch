@@ -65,6 +65,10 @@
     float: left;
     clear: left;
 }
+
+.hovered {
+    background-color: darkgray;
+}
 /* 
 2. FLOAT/CLEAR END
 */
