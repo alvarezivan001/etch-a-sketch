@@ -36,7 +36,7 @@
     border-style: solid;
     border-color:black;
     padding: 5px;
-    background-color: white;
+    background-color: gray;
     width: 960px;
     max-width: 960px;
     /* width: fit-content; */
@@ -48,18 +48,19 @@
     border-style: solid;
     border-color: black;
     padding: 20px;
-    background-color: grey;
+    background-color: white;
 
     
     /* display: table; */
     float: left;
 }
-.grid-square-start {
+.grid-square.start {
     border: 2px;
     border-style: solid;
     border-color: black;
     padding: 20px;
-    background-color: grey;
+    background-color: white;
+
 
     float: left;
     clear: left;

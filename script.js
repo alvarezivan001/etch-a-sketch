@@ -15,13 +15,14 @@
 // 
 
 //setup gridcount, grab container
-let gridCount = 20;//4*4 = 16
+let gridCount = 4;//4*4 = 16
 let divGridContainer = document.querySelector('.grid-container');
 
 for(let i = 1; i <= gridCount; i++)
 {
     const startDiv = document.createElement('div');
-    startDiv.classList.toggle('grid-square-start');
+    startDiv.classList.toggle('grid-square');
+    startDiv.classList.toggle('start');
     divGridContainer.appendChild(startDiv);
     for(let i = 2; i <= gridCount; i++)
     {
