@@ -38,11 +38,30 @@ gridSquares.forEach((square) => {
 
     square.addEventListener('mouseover', () => {
 
-        square.classList.toggle('hovered');
+        // square.style.cssText = "background-color: black;"
+        square.classList.add('hovered');
         
     });
-
+    
 });
+
+const button = document.querySelector('.grid-generator');
+
+button.addEventListener('click', () => {
+
+    let newSize = prompt("What are the new number of squares?");
+    if(typeof Number(newSize) === "number" && newSize < 100)
+    {
+        removeAllSquares(); 
+        newSquares(Number(newSize));
+    }
+    else
+    {
+        alert("Enter a valid number next time");
+    }
+});
+
+
 // 
 // FLOAT/CLEAR end
 // 
