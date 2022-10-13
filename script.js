@@ -63,7 +63,7 @@ button.addEventListener('click', () => {
 
 function removeAllSquares(){
 
-    const allSquares = document.querySelectorAll('.grid-squares');
+    const allSquares = document.querySelectorAll('.grid-square');
     allSquares.forEach(square => square.remove());
 
 };
