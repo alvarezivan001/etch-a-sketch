@@ -53,7 +53,7 @@ button.addEventListener('click', () => {
     if(typeof Number(newSize) === "number" && newSize < 100)
     {
         removeAllSquares(); 
-        newSquares(Number(newSize));
+        // newSquares(Number(newSize));
     }
     else
     {
@@ -61,6 +61,12 @@ button.addEventListener('click', () => {
     }
 });
 
+function removeAllSquares(){
+
+    const allSquares = document.querySelectorAll('.grid-squares');
+    allSquares.forEach(square => square.remove());
+
+};
 
 // 
 // FLOAT/CLEAR end
