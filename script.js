@@ -84,6 +84,16 @@ function newSquares(num) {
         }
     }
     gridSquares = document.querySelectorAll('.grid-square');
+    gridSquares.forEach((square) => {
+
+        square.addEventListener('mouseover', () => {
+    
+            // square.style.cssText = "background-color: black;"
+            square.classList.add('hovered');
+            
+        });
+        
+    });
 }
 
 // 

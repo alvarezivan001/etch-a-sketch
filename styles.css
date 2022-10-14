@@ -69,6 +69,10 @@
 .hovered {
     background-color: darkgray;
 }
+.grid-square.start.hovered {
+    background-color: darkgray;
+
+}
 /* 
 2. FLOAT/CLEAR END
 */
