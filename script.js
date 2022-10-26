@@ -70,17 +70,25 @@ function removeAllSquares(){
 
 function newSquares(num) {
     gridCount = num;
+    let gridAdjuster = 600 - (2*gridCount);
+    let newPadding = gridAdjuster/(2*gridCount);
+    let newPaddingString = newPadding.toString() + "px";
+
     for(let i = 1; i <= gridCount; i++)
     {
         const startDiv = document.createElement('div');
         startDiv.classList.toggle('grid-square');
         startDiv.classList.toggle('start');
+        startDiv.style.padding = newPaddingString;
         divGridContainer.appendChild(startDiv);
+        
         for(let i = 2; i <= gridCount; i++)
         {
             const div = document.createElement('div');
             div.classList.toggle('grid-square');
+            div.style.padding = newPaddingString;
             divGridContainer.appendChild(div);
+            
         }
     }
     gridSquares = document.querySelectorAll('.grid-square');
